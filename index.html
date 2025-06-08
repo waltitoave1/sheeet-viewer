@@ -3,21 +3,30 @@
 <html>
   <head>
     <meta http-equiv="refresh" content="60">
-    <title>Google Sheet en Vivo</title>
+    <title>Google Sheet Escalado</title>
     <style>
       html, body {
         margin: 0;
         height: 100%;
         overflow: hidden;
+        background: #ffffff;
       }
-      iframe {
+      .iframe-container {
         width: 100%;
         height: 100%;
+        transform: scale(0.8);
+        transform-origin: 0 0;
+      }
+      iframe {
+        width: 125%;
+        height: 125%;
         border: none;
       }
     </style>
   </head>
   <body>
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_xnGy7kt3tZF5TAusiFY1zb-WeFyAzMo5dekJIHNSFMWc7AKcqlqRLkmh4yWnAnyc3fVYNFlX1zLL/pubhtml?gid=0&single=true"></iframe>
+    <div class="iframe-container">
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_xnGy7kt3tZF5TAusiFY1zb-WeFyAzMo5dekJIHNSFMWc7AKcqlqRLkmh4yWnAnyc3fVYNFlX1zLL/pubhtml?gid=0&single=true"></iframe>
+    </div>
   </body>
 </html>
